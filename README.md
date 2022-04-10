@@ -11,8 +11,9 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Screenshot
 
+![desktop](/design/screenshot-desktop.jpg)
 ![mobile](/design/screenshot-mobile.jpg)
-[desktop](/design/screenshot-desktop.jpg)
+
 
 
 ### Links
