@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+$mainColor:hsl(300, 43%, 22%);
+$verifiedText: hsl(333, 80%, 67%);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 0 100px;
+    display: flex;
+}
+
+.top{
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    h2{
+        color: $mainColor;
+        font-size: 3rem;
+    }
+    .intro{
+        padding-right: 50px;
+    }
+    .intro p{
+        color: hsl(303, 10%, 53%);
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+
+}
+
+.rated-box{
+    display: flex;
+    flex-direction: column;
+    color: $mainColor;
+    justify-content: space-between;
+    margin: 20px 0px;
+
+    .rate{
+        display: flex;
+        align-items: center;
+        background-color: hsl(300, 24%, 96%);
+        padding-left: 20px;
+        width: 500px;
+        height: 50px;
+        border-radius: 5px;     
+    }
+    .rate:nth-of-type(2){
+        margin: 20px 0px 0px 50px;
+    }
+    .rate:nth-of-type(3){
+        margin: 20px 0px 0px 100px;
+    }
+    img{
+        padding-left: 5px;
+        float: left;
+    }
+    p{
+        padding-left: 30px;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+}
+
+.bottom{
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .review{
+        flex: 1;
+        background-color: $mainColor;
+        border-radius: 5px;
+        padding: 20px 10px;
+        color: #fff;
+        margin-bottom: 50px;
+        padding: 40px 20px;
+        font-size: 1rem;
+
+
+    }
+    .review:nth-of-type(2){
+        margin: 25px 0px 25px 30px;
+    }
+    .review:nth-of-type(3){
+        margin: 50px 0px 0px 30px;
+    }
+    .card-header{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .verified{
+        color: $verifiedText;
+    }
+    img{
+        float: left;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 20px;
+
+    }
+}
+
+@media (max-width:375px){
+    .container{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .top .rate:nth-of-type(2){
+        margin-left: 0px;
+    }
+    .top .rate:nth-of-type(3){
+        margin-left: 0px;
+    }
+    .bottom .review:nth-of-type(2){
+        margin-left:  0px;
+    }
+    .bottom .review:nth-of-type(3){
+        margin-left:  0px;
+    }
+}
+
